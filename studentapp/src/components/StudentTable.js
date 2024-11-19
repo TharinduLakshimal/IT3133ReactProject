@@ -12,6 +12,7 @@ export default function StudentTable(props){
                             <td>Last Name</td>
                             <td>course</td>
                             <td>Country</td>
+                            <td>Profile</td>
                          
                         </tr>
                     </thead>
@@ -23,6 +24,7 @@ export default function StudentTable(props){
                             <td>{student.lastName}</td>
                             <td>{student.course}</td>
                             <td>{student.address.country}</td>
+                            <td><button>View</button></td>
                           
                         </tr>
                         ) 
