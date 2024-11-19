@@ -4,12 +4,21 @@ import {useState} from"react";
 
 export default function StudentTable(props){
     const [stu,setStu]=useState( props.students[0]);
+    const [font,setFont]=useState(16);
     return (
     
     <div>
+        <div align='left'>
+            Fonst Size: 
+            <button onClick={()=>setFont(14)}>S</button>
+            <button onClick={()=>setFont(18)}>M</button>
+            <button onClick={()=>setFont(20)}>L</button>
+        </div>
+       
+        <hr/>
          <div className="outerDiv">
             <div className="leftDiv"> 
-                <table border="1">
+                <table border="1" style={{fontSize:`${font}px`}}>
                     <thead>
                         <tr>
                             <td>First Name</td>
